@@ -25,13 +25,13 @@ class webScraper():
             url = tag.get('href')
             if url is None:
                 continue
-            elif 'tesla' in url:
+            elif 'elon' in url or 'tsla' in url:
                 
                 if url not in results:
                     results.append(url)
                     article_count += 1
                     
-                    if article_count >= 3:
+                    if article_count >= 5:
                         break
         
         for link in results:
@@ -39,5 +39,5 @@ class webScraper():
             print(link)
         print()
 
-news = "https://www.cnbc.com/technology/"
+news = "https://www.google.com/finance/quote/TSLA:NASDAQ?hl=en"
 webScraper(news).webScrape()
