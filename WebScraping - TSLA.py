@@ -1,6 +1,6 @@
 '''
 Webscraping Practice
-Recent TLSA News from CNBC
+Recent TLSA News from Google Finance (Entry Source)
 GitHub: devp19
 '''
 
